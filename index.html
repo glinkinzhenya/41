@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Lesson 35</title>
+</head>
+
+<body>
+  <div id="black" class="block"></div>
+  <div class="container">
+    <div class="categories">
+      <div class="categories-iphone">
+        <img class="categories-iphone__img" src="img/iphone.png" alt="">
+      </div>
+      <div class="categories-mac">
+        <img class="categories-mac__img" src="img/mac.png" alt="">
+      </div>
+      <div class="categories-watch">
+        <img class="categories-watch__img" src="img/watch.png" alt="">
+      </div>
+    </div>
+    <div class="product">
+
+      <div class="product-iphone" style="display: none">
+
+        <div class="product-iphone__2">
+          <p>iPhone 2g</p>
+          <img class="product-iphone__2-img" src="img/2.jpg" alt="">
+          <div class="product-iphone__2-info none">
+            <p>Процессор: 412 Мгц, граф.процессор</p>
+            <p>Память: 8 Гб, 128 Мб RAM.</p>
+            <p>Платформа: IOS 2.</p>
+            <p>Аккумулятор: 1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки</p>
+            <p>Экран: 3.5", сенсорный, 480x320, емкостный, TFT, 16 млн. ...</p>
+            <p>Камера: 2 мпикс, 1600x1200, пинч-зум</p>
+            <p>Вид: Моноблок, 135 г, 115x61x11.6 мм</p>
+
+            <div>
+              <button id="button1" class="button">Купить</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="product-iphone__3">
+          <p>iPhone 3g</p>
+          <img class="product-iphone__3-img" src="img/3.jpg" alt="">
+
+          <div class="product-iphone__3-info none">
+            <p>Сеть: GSM / GPRS WCDMA / HSDPA (850 / 1900 / 2100 МГц)</p>
+            <p>Операционная система: iPhone 2.0 OS.</p>
+            <p>Дисплей: сенсорный, 3,5 дюйма, 480 х 320 точек</p>
+            <p>Аккумулятор: 1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки</p>
+            <p>Экран: 3.5", сенсорный, 480x320, емкостный, TFT, 16 млн. ...</p>
+            <p>Камера: 2 мпикс, 1600x1200, пинч-зум</p>
+            <p>Вид: Моноблок, 135 г, 115x61x11.6 мм</p>
+
+            <div>
+              <button id="button2" class="button">Купить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-iphone__4">
+          <p>iPhone 4</p>
+          <img class="product-iphone__4-img" src="img/4.png" alt="">
+
+          <div class="product-iphone__4-info none">
+            <p>Сеть: GSM / GPRS WCDMA / HSDPA (850 / 1900 / 2100 МГц)</p>
+            <p>Операционная система: iPhone 2.0 OS.</p>
+            <p>Дисплей: сенсорный, 3,5 дюйма, 480 х 320 точек</p>
+            <p>Аккумулятор: 1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки</p>
+            <p>Экран: 3.5", сенсорный, 480x320, емкостный, TFT, 16 млн. ...</p>
+            <p>Камера: 2 мпикс, 1600x1200, пинч-зум</p>
+            <p>Вид: Моноблок, 135 г, 115x61x11.6 мм</p>
+
+            <div>
+              <button id="button3" class="button">Купить</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="product-mac" style="display: none">
+
+        <div class="product-mac__1">
+          <p>macBook Air</p>
+          <img class="product-mac__1-img" src="img/mac1.png" alt="">
+        </div>
+
+        <div class="product-mac__2">
+          <p>iMac</p>
+          <img class="product-mac__2-img" src="img/mac2.png" alt="">
+        </div>
+
+        <div class="product-mac__3">
+          <p>macBook Pro</p>
+          <img class="product-mac__3-img" src="img/mac3.png" alt="">
+        </div>
+      </div>
+      <div class="product-watch" style="display: none">
+
+        <div class="product-watch__1">
+          <p>Apple Watch white</p>
+          <img class="product-watch__1-img" src="img/watch1.png" alt="">
+        </div>
+
+        <div class="product-watch__2">
+          <p>Apple Watch Metal</p>
+          <img class="product-watch__2-img" src="img/watch2.png" alt="">
+        </div>
+
+        <div class="product-watch__3">
+          <p>Apple Watch Red</p>
+          <img class="product-watch__3-img" src="img/watch3.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <form class="none" style="top: -410px;">
+      <div>
+        <input id="name" type="text" placeholder="ПІБ покупця" />
+      </div>
+
+      <div>
+        <select id="town">
+          <option hidden>Ваше місто</option>
+          <option value="Киев">Київ</option>
+          <option value="Львов">Львів</option>
+          <option value="Одесса">Одесса</option>
+        </select>
+      </div>
+
+      <div>
+        <input id="number" type="number" placeholder="Склад Нової пошти" />
+      </div>
+
+      <div>
+        <input id="card" type="number" placeholder="введіть номер банківської карти" />
+      </div>
+
+      <div>
+        <input id="adress" type="text" placeholder="Напишите адресс"></input>
+      </div>
+
+      <div>
+        <input id="product" type="number" name="number" placeholder="кількість" />
+      </div>
+
+      <div>
+        <button class="button" id="button">Підтвердити</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div id="info" class="block" style="top: -410px;">
+    <div><span id="position"></span></div>
+    <p>Имя:<span id="person"></span></p>
+    <p>город:<span id="city"></span></p>
+    <p>новая почта:<span id="mail"></span></p>
+    <p>банковская карта:<span id="bank"></span></p>
+    <p>адресс:<span id="street"></span></p>
+    <p>количество:<span id="numbers"></span></p>
+    <div>
+      <button id="button4" class="button">Добре</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

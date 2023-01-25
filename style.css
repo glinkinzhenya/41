@@ -1,0 +1,249 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#black {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  background-color: bisque;
+  padding: 30px;
+  border-radius: 50px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  position: absolute;
+  left: 600px;
+  width: 450px;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(242, 177, 97);
+  cursor: pointer;
+}
+
+#info {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: bisque;
+  width: 420px;
+  border-radius: 50px;
+  padding: 30px;
+  position: absolute;
+  left: 600px;
+}
+
+.block {
+  display: none;
+}
+
+span {
+  color: darkblue;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  padding: 11px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+
+}
+
+.categories-iphone {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.categories-iphone__img {
+  width: 180px;
+}
+
+.categories-mac {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.categories-mac__img {
+  width: 180px;
+}
+
+.categories-watch {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.categories-watch__img {
+  width: 180px;
+}
+
+.product {
+  width: 300px;
+}
+
+.product-iphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.product-iphone__2 {
+  cursor: pointer;
+}
+
+.product-iphone__2-img {
+  width: 80px;
+}
+
+.product-iphone__3 {
+  cursor: pointer;
+}
+
+.product-iphone__3-img {
+  width: 80px;
+}
+
+.product-iphone__4 {
+  cursor: pointer;
+}
+
+.product-iphone__4-img {
+  width: 80px;
+}
+
+.product-mac {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-mac__1 {
+  text-align: center;
+}
+
+.product-mac__1-img {
+  width: 150px;
+}
+
+.product-mac__2 {
+  text-align: center;
+}
+
+.product-mac__2-img {
+  width: 180px;
+}
+
+.product-mac__3 {
+  text-align: center;
+}
+
+.product-mac__3-img {
+  width: 150px;
+}
+
+.product-watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-watch__1 {
+  text-align: center;
+}
+
+.product-watch__1-img {
+  width: 150px;
+}
+
+.product-watch__2 {
+  text-align: center;
+}
+
+.product-watch__2-img {
+  width: 150px;
+}
+
+.product-watch__3 {
+  text-align: center;
+}
+
+.product-watch__3-img {
+  width: 150px;
+}
+
+.active {
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: antiquewhite;
+}
+
+.iphone {
+  position: absolute;
+  left: 600px;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  padding: 30px;
+
+}
+
+.none {
+  display: none;
+}
+
+.button {
+  background-color: black;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  margin-top: 30px;
+  width: 150px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#card {
+  width: 300px;
+}
+
+#product {
+  width: 80px;
+}
