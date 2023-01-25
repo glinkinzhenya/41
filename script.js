@@ -85,35 +85,14 @@ function categories(params) {
 }
 
 productIphone2.addEventListener("click", () => {
-    // productIphone2info.classList.remove("none");
-    // productIphone3info.classList.add("none");
-    // productIphone4info.classList.add("none");
-    // productIphone2.classList.add("iphone");
-    // productIphone3.classList.remove("iphone");
-    // productIphone4.classList.remove("iphone");
-
     iphone("2");
 })
 
 productIphone3.addEventListener("click", () => {
-    // productIphone3info.classList.remove("none");
-    // productIphone2info.classList.add("none");
-    // productIphone3.classList.add("iphone");
-    // productIphone2.classList.remove("iphone");
-    // productIphone4.classList.remove("iphone");
-    // productIphone4info.classList.add("none");
-
     iphone("3");
 })
 
 productIphone4.addEventListener("click", () => {
-    // productIphone4info.classList.remove("none");
-    // productIphone2info.classList.add("none");
-    // productIphone4.classList.add("iphone");
-    // productIphone2.classList.remove("iphone");
-    // productIphone3info.classList.add("none");
-    // productIphone3.classList.remove("iphone");
-
     iphone("4");
 })
 
@@ -143,8 +122,6 @@ function iphone(params) {
         productIphone4.classList.remove("iphone");
     };
 };
-
-
 
 buttonIphone2.addEventListener("click", () => {
     formEnter("iPhone 2G")
