@@ -93,37 +93,21 @@ productIphone4.addEventListener("click", () => {
     productIphone3info.classList.add("none");
     productIphone3.classList.remove("iphone");
 })
-
+const form = document.getElementById("container");
 
 buttonIphone2.addEventListener("click", () => {
-    black.classList.remove("block");
-    let i = -410;
-
-    document.getElementById("position").innerText = "Ви замовили iPhone 2G";
-
-    formWidth.classList.remove("none");
-
-    formWidth.style.top = `${i}px`;
-
-    setInterval(() => {
-        i += 5
-        formWidth.style.top = `${i}px`;
-        if (i === 10) {
-            clearInterval(1);
-        }
-    }, 5);
-
+    formEnter("iPhone 2G")
 })
 
 buttonIphone3.addEventListener("click", () => {
-
+    formEnter("iPhone 3G")
 })
 
 buttonIphone4.addEventListener("click", () => {
-
+    formEnter("iPhone 4")
 })
 
-const form = document.getElementById("container");
+
 const button = document.getElementById("button");
 const info = document.getElementById("info");
 const town = document.getElementById("town");
@@ -196,3 +180,17 @@ function checkInfoOff() {
     product.setAttribute("style", "");
 };
 
+function formEnter(unit) {
+    black.classList.remove("block");
+    let i = -410;
+    document.getElementById("position").innerText = `Ви замовили ${unit}`;
+    formWidth.classList.remove("none");
+    formWidth.style.top = `${i}px`;
+    setInterval(() => {
+        i += 5
+        formWidth.style.top = `${i}px`;
+        if (i === 10) {
+            clearInterval(1);
+        }
+    }, 5);
+};
