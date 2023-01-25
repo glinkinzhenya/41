@@ -34,66 +34,117 @@ const buttonIphone4 = document.getElementById("button3");
 const black = document.getElementById("black");
 
 const formWidth = document.querySelector("form");
+const button = document.getElementById("button");
+const info = document.getElementById("info");
+const town = document.getElementById("town");
+const name1 = document.getElementById("name");
+const number = document.getElementById("number");
+const card = document.getElementById("card");
+const adress = document.getElementById("adress");
+const product = document.getElementById("product")
+const form = document.getElementById("container");
 
 
 categoriesIphone.addEventListener("click", () => {
-    categoriesIphone.classList.add("active");
-    categoriesMac.classList.remove("active");
-    categoriesWatch.classList.remove("active");
-    productIphone.setAttribute("style", "");
-    productMac.setAttribute("style", "display: none");
-    productWatch.setAttribute("style", "display: none");
+    categories("iphone");
 });
 
 categoriesMac.addEventListener("click", () => {
-    categoriesMac.classList.add("active");
-    categoriesIphone.classList.remove("active");
-    categoriesWatch.classList.remove("active");
-    productIphone.setAttribute("style", "display: none");
-    productMac.setAttribute("style", "");
-    productWatch.setAttribute("style", "display: none");
+    categories("mac");
 });
-
 
 categoriesWatch.addEventListener("click", () => {
-    categoriesWatch.classList.add("active");
-    categoriesMac.classList.remove("active");
-    categoriesIphone.classList.remove("active");
-    productIphone.setAttribute("style", "display: none");
-    productMac.setAttribute("style", "display: none");
-    productWatch.setAttribute("style", "");
-    productIphone.setAttribute("style", "display: none");
-    productMac.setAttribute("style", "display: none");
+    categories("watch");
 });
 
-productIphone2.addEventListener("click", () => {
-    productIphone2info.classList.remove("none");
-    productIphone3info.classList.add("none");
-    productIphone4info.classList.add("none");
-    productIphone2.classList.add("iphone");
-    productIphone3.classList.remove("iphone");
-    productIphone4.classList.remove("iphone");
 
+function categories(params) {
+    if (params === "iphone") {
+        categoriesIphone.classList.add("active");
+        productIphone.setAttribute("style", "");
+    } else {
+        categoriesIphone.classList.remove("active");
+        productIphone.setAttribute("style", "display: none");
+    };
+
+    if (params === "mac") {
+        categoriesMac.classList.add("active");
+        productMac.setAttribute("style", "");
+    } else {
+        categoriesMac.classList.remove("active");
+        productMac.setAttribute("style", "display: none");
+    };
+
+    if (params === "watch") {
+        categoriesWatch.classList.add("active");
+        productWatch.setAttribute("style", "");
+    } else {
+        categoriesWatch.classList.remove("active");
+        productWatch.setAttribute("style", "display: none");
+    };
+}
+
+productIphone2.addEventListener("click", () => {
+    // productIphone2info.classList.remove("none");
+    // productIphone3info.classList.add("none");
+    // productIphone4info.classList.add("none");
+    // productIphone2.classList.add("iphone");
+    // productIphone3.classList.remove("iphone");
+    // productIphone4.classList.remove("iphone");
+
+    iphone("2");
 })
 
 productIphone3.addEventListener("click", () => {
-    productIphone3info.classList.remove("none");
-    productIphone2info.classList.add("none");
-    productIphone3.classList.add("iphone");
-    productIphone2.classList.remove("iphone");
-    productIphone4.classList.remove("iphone");
-    productIphone4info.classList.add("none");
+    // productIphone3info.classList.remove("none");
+    // productIphone2info.classList.add("none");
+    // productIphone3.classList.add("iphone");
+    // productIphone2.classList.remove("iphone");
+    // productIphone4.classList.remove("iphone");
+    // productIphone4info.classList.add("none");
+
+    iphone("3");
 })
 
 productIphone4.addEventListener("click", () => {
-    productIphone4info.classList.remove("none");
-    productIphone2info.classList.add("none");
-    productIphone4.classList.add("iphone");
-    productIphone2.classList.remove("iphone");
-    productIphone3info.classList.add("none");
-    productIphone3.classList.remove("iphone");
+    // productIphone4info.classList.remove("none");
+    // productIphone2info.classList.add("none");
+    // productIphone4.classList.add("iphone");
+    // productIphone2.classList.remove("iphone");
+    // productIphone3info.classList.add("none");
+    // productIphone3.classList.remove("iphone");
+
+    iphone("4");
 })
-const form = document.getElementById("container");
+
+function iphone(params) {
+
+    if (params === "2") {
+        productIphone2info.classList.remove("none");
+        productIphone2.classList.add("iphone");
+    } else {
+        productIphone2info.classList.add("none");
+        productIphone2.classList.remove("iphone");
+    };
+
+    if (params === "3") {
+        productIphone3info.classList.remove("none");
+        productIphone3.classList.add("iphone");
+    } else {
+        productIphone3info.classList.add("none");
+        productIphone3.classList.remove("iphone");
+    };
+
+    if (params === "4") {
+        productIphone4info.classList.remove("none");
+        productIphone4.classList.add("iphone");
+    } else {
+        productIphone4info.classList.add("none");
+        productIphone4.classList.remove("iphone");
+    };
+};
+
+
 
 buttonIphone2.addEventListener("click", () => {
     formEnter("iPhone 2G")
@@ -106,17 +157,6 @@ buttonIphone3.addEventListener("click", () => {
 buttonIphone4.addEventListener("click", () => {
     formEnter("iPhone 4")
 })
-
-
-const button = document.getElementById("button");
-const info = document.getElementById("info");
-const town = document.getElementById("town");
-const name1 = document.getElementById("name");
-const number = document.getElementById("number");
-const card = document.getElementById("card");
-const adress = document.getElementById("adress");
-const product = document.getElementById("product")
-
 
 button.addEventListener("click", (e) => {
     e.preventDefault();
